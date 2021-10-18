@@ -1,0 +1,81 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgba(225, 192, 241, 0.582);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(247, 234, 234);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  padding-left: 5%;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  padding-left: 5%;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-left: 5%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+#acc {
+  border: 2px solid black;
+}
+
+#pro {
+  padding-bottom: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+  margin-left: 4%;
+  margin-right: 5%;
+}
